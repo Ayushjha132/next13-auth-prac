@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
     })
 
     response.cookies.set("token", token, {
-        httpOnly: true
+        httpOnly: true,
     })
     return response;
 
